@@ -1,0 +1,34 @@
+/* Grau1 Bookmarks - for easy editing colors were separated - Jean */
+/* background */
+body {background-color: #F3F3F3;}
+
+/* column */
+.table-main {background-color: #DEDEDE;}
+
+/* header */
+.table-folder th {background-color: #C4C4C4;}
+
+/* inside */
+ .table-folder, input, select, option{background-color: #E9E9E9;}
+
+/* header link*/
+th > a {color: #3F75A4;}
+
+/* link */
+td > a:link, td > a:visited, td > a:active{color: Black; border-left: 1px dashed #E9E9E9;}
+td > a:hover {color: #3F75A4; border-left: 1px dashed #3F75A4;}
+
+/* border */
+.table-folder, input, select {border: 1px solid #B4B4B4;}
+
+/* submit */
+input[type="submit"] {background-color: #DEDEDE; color: #3F75A4;}
+input:focus {background-color: #DEDEDE;}
+
+/* static stuff */
+body {font-family: 'trebuchet ms', arial, helvetica, sans-serif;}
+.table-folder {border-spacing: 0px;}
+th {line-height: .9em;}
+a{font-size: .8em; text-decoration: none; white-space: nowrap;
+padding: 0px 0px 0px 2px;}
+.table-folder th {text-align: left; padding: 0px 0px 5px 5px;}

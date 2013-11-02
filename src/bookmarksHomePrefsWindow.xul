@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://bookmarkshome/content/bookmarksHomePrefsWindow.css" type="text/css"?>
+
+<!--
+id's of elements in document are equal to corresponding preferences
+-->
+<window id="bookmarksHomePrefsWindow"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    onload="if( bMHPrefsWindow == null ) bMHPrefsWindow = new BMHPrefsWindow();" 
+    title="BookmarksHome Options"> 
+
+    <script type="application/x-javascript" src="chrome://bookmarkshome/content/bookmarksHomePrefsWindow.js"/>
+    <script type="application/x-javascript" src="chrome://bookmarkshome/content/bookmarksHomePrefs.js"/>
+
+    <popupset>
+	<popup id="AddAsPopup">
+	    <textbox size="15"/>
+	</popup>
+    </popupset>
+
+    <tabbox flex="10">
+	<tabs >
+	    <tab label="General"/>
+	    <tab label="Style"/>
+	    <tab label="Folders"/>
+	</tabs>
+	<tabpanels id="prefsPanels" flex="1">
+	    <tabpanel id="generalTab" orient="vertical">
+		<groupbox flex="1">
+		    <grid flex="1">
+			<columns></columns>
+			<rows>
+			    <row>
+				<label value="Hide search engines:"/>
+				<checkbox id="hideSearchEngines" oncommand="bMHPrefsWindow.hideEngines()"/>
+			    </row>
+			    <row id="engineRow">
+				<label value="Default:"/>
+				<menulist id="engine">
+				    <menupopup id="enginePopup"/>
+				</menulist>
+			    </row>
+			    <!--
+			    <spacer flex="1"/>
+			    <row>
+				<label value="Main table cellpadding:"/>
+				<hbox>
+				    <textbox id="table_main_cellpadding" size="3"/>
+				    <spacer flex="1"/>
+				</hbox>
+			    </row>
+			    <spacer flex="1"/>
+			    <row>
+				<label value="Column table cellspacing:"/>
+				<hbox>
+				    <textbox id="table_column_cellspacing" size="3"/>
+				    <spacer flex="1"/>
+				</hbox>
+			    </row>
+			    -->
+			    <spacer flex="1"/>
+			    <row>
+				<label value="Number of columns:"/>
+				<hbox>
+				    <textbox id="nrOfColumns" size="3"/>
+				    <spacer flex="1"/>
+				</hbox>
+			    </row>
+			    <spacer flex="1"/>
+			    <row>
+				<label value="Maximum name length:"/>
+				<hbox>
+				    <textbox id="maxNameLength" size="3"/>
+				    <spacer flex="1"/>
+				</hbox>
+			    </row>
+			    <spacer flex="1"/>
+			    <row>
+				<label value="Maximum header lines:"/>
+				<hbox>
+				    <textbox id="maxHeaderLines" size="3"/>
+				    <spacer flex="1"/>
+				</hbox>
+			    </row>
+			    <spacer flex="1"/>
+			    <row>
+				<label value="Open folder in:"/>
+				<radiogroup id="openFolderIn" orient="horizontal">
+				    <radio label="tabs"/>
+				    <radio label="windows"/>
+				</radiogroup>
+			    </row>
+			    <spacer flex="1"/>
+			</rows>
+		    </grid>
+		</groupbox>
+	    </tabpanel>
+	    <tabpanel id="styleTab" orient="vertical">
+		<hbox id="styleUpperHbox">
+		    <colorpicker type="button" onchange="bMHPrefsWindow.showColor( this.color )"/>
+		    <textbox id="hexColor" size="9" readonly="true"/>
+		    <spacer flex="1"/>
+		    <menulist id="styles" oncommand="bMHPrefsWindow.changeStyle()"> 
+			<menupopup id="sheetNames"></menupopup>
+		    </menulist>
+		    <spacer flex="1"/>
+		    <button type="menu" label="Menu">
+			<menupopup>
+			    <menuitem label="Set As Default" oncommand="bMHPrefsWindow.setAsDefault()"/>
+			    <menuitem label="Add As..." oncommand="bMHPrefsWindow.addAsPrompt()"/>
+			    <menuitem label="Delete" oncommand="bMHPrefsWindow.deletePrompt()"/>
+			</menupopup>
+		    </button>
+		</hbox>
+		<textbox id="stylesheet" multiline="true" rows="15" cols="50" flex="1"  
+		    oninput="bMHPrefsWindow.updateStyle( this.action )"/>
+	    </tabpanel>
+	    <tabpanel id="foldersTab" orient="vertical">
+		<groupbox>
+		    <hbox>
+			<spacer flex="1"/>
+			<menulist id="excludeIndex">
+			    <menupopup>
+				<menuitem label="Exclude"/>
+				<menuitem label="Include"/>
+			    </menupopup>
+			</menulist>
+			<spacer flex="1"/>
+			<checkbox id="subfolderCheckbox" label="(un)check subfolders" checked="false"/>
+			<spacer flex="1"/>
+		    </hbox>
+		</groupbox>
+		<command id="folderCheckBoxCommand" oncommand="alert('check')"/>
+		<iframe id="folderFrame" src="bmhFolderPage.xul" flex="1"/>
+	    </tabpanel>
+	</tabpanels>
+    </tabbox>
+    <spacer style="height" flex="1"/>
+    <hbox align="baseline">
+	<spacer flex="1"/>
+	<button label="Close" oncommand="bMHPrefsWindow.close();"/>
+	<button label="Apply" oncommand="bMHPrefsWindow.apply()"/>
+    </hbox>
+</window>

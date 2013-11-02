@@ -1,0 +1,12 @@
+@import url("http://www.mozdev.org/project.css");
+
+.table-stylesheets th {
+    font-weight: normal;
+color: #fff;
+       background-color: #f90;
+padding: 10px;
+}
+
+.table-stylesheets td {
+padding: 10px;
+}

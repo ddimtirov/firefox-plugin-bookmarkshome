@@ -1,0 +1,57 @@
+/* == Text and Background colors ============= */
+
+body                           { background-color: Background;       color: CaptionText;   }
+#searchForm                    { background-color: Menu;             color: MenuText;      }
+.table-main                    { background-color: Window;           color: WindowText;    }
+.table-folder       td a:hover { background-color: Highlight;        color: HighlightText; }
+.table-folder:hover th a       { background-color: Highlight;        color: HighlightText; }
+.table-folder       th a       { background-color: InactiveBorder;   color: HighlightText; }
+
+
+/* == Fonts & Text =========================== */
+
+body, body *             { font: xx-small verdana, helvetica, sans-serif; }
+a                        { text-decoration: none; }
+#searchForm              { text-align: left; }
+.table-folder th a       { font-weight: bold; }
+.table-folder th a:hover { text-decoration: underline; }
+
+                                   
+
+/* == Mozilla rounded borders ================ */ 
+
+#searchForm              { -moz-border-radius:   0em  3em  0em 0em; }
+.table-main              { -moz-border-radius:   0em  0em  3em 0em; }
+.table-main:first-child  { -moz-border-radius:   3em  0em  3em 0em; }
+.table-column            { -moz-border-radius:   1em  1em  0em 0em; }
+.table-folder th a       { -moz-border-radius:   1em  1em  0em 0em; }
+.table-folder td a       { -moz-border-radius:  .3em; }
+
+
+/* == Formatting, Box, Tables ================ */
+
+body { margin: 1em; padding: 0em; }
+a  { padding: .1em 1em .2em 1em !important; display: block; }
+br { display: runin; }  
+
+#searchForm        { width: 100%; display: block; margin-bottom: 0em; }
+.table-main        { width: 100%; }
+.table-column      { border: InactiveBorder 1px solid; }
+.table-folder      { margin-bottom: 1em }
+.table-folder th a { margin-bottom: .3em; }
+
+body > div > a { 
+       position: absolute; 
+       top: 0em; 
+       right: 0em; 
+       padding: 1em 3em 0em 0em !important; 
+}
+                                                   
+.table-folder, .table-folder * {
+    border: 0em; 
+    padding: 0em; 
+    margin: 0em;
+ 	 border-spacing: 0em; 
+ 	 border-collapse: collapse;
+    width: *;
+}

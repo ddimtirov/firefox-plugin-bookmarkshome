@@ -1,0 +1,85 @@
+<b>Todo</b>
+<ul>
+<li>Livemarks should be displayed as folders like in the Bookmarks Menu.</li>
+<li>Allow Bookmarks Icons to be displayed.</li>
+<li>Add ftp functionality; next to the options link, a link for ftp upload of generated page.</li>
+<li>Options link in the extensions manager should open a window that refers
+people to the options link in the page.</li>
+<li>Style tab in options should behave like the extension editcss.</li>
+<li>Create a way for users to save stylesheets, and then choose them from a 
+drop downn listbox.</li>
+<li>Next to the options link, have a link back to the bmh homepage.</li>
+<li>Set homepage in install.rdf.</li>
+<li>Add more search engines, including a9.com, dogpile, and MSN.</li>
+</ul>
+<br><br>
+<b>Version 1.2.3</b>
+<ul>
+<li>Thanks to Josh Powell, the bmh-not-always-loading-properly-on-windows bug has been fixed by doing a (unnoticeable) meta refresh with bmh's url in the file<i> chrome://bookmarkshome/content/startup.html</i>. The homepage preference should be set to this url.</li>
+<li>IMPORTANT: If you want to have BookmarksHome as your home page, set the 
+corresponding preference to: chrome://bookmarkshome/content/startup.html.</li> 
+</ul>
+<br><br>
+<b>Version 1.2.2</b>
+<ul><li>The wyciwyg bug was caused by my fix of the bmh-not-always-loading-properly-on-windows bug. The back-button bug (mozilla crashes when clicking the back-button to get to bmh) was caused by my fix of the wyciwyg bug. The bmh-not-always-loading-properly-on-windows bug only occurs at startup and is caused by an unfinished initialization of the bookmarks when bmh tries to read them. When this happens, just reload bmh. This version is like <b>1.2</b> without the fix for the bmh-not-always-loading-properly-on-windows bug.</li> 
+</ul>
+<br><br>
+<b>Version 1.2.1</b>
+<ul>
+<li>The <i>wyciwig</i> error has been fixed.</li>
+</ul>
+<br><br>
+<b>Version 1.2</b>
+<ul>
+<li>The<i> BMHome </i>button, present in previous versions, has been removed. To create a button, file the <b>BookmarksHome</b> page in your Toolbar folder (see next item).
+<li>The <b>BookmarksHome</b> page is bookmarked with a url like:<br><br>
+<i><span style="color: red">wyciwyg://0/</span>chrome://bookmarkshome/content/bookmarksHome.html</i><br><br>
+The red part shouldn't be there.</li> 
+<li>The folder headers have become links that open the folder in new tabs or windows.
+<li>The options window has had a makeover.
+<li>Previous versions did sometimes not load properly (on windows). Hopefully this is fixed now. Let me know if it still happens.</li>
+<li>A livemark is displayed as a single link to its homepage.
+</ul>
+<br><br>
+<b>Version 1.1.2</b>
+<ul>
+    <li>The folder pane has twice the height of 1.1.1's pane.</li>
+    <li>Selected folders can either be included or excluded.</li>
+    <li>Option to select subfolders for in- or exclusion. Does not apply to future subfolders. Let me know if you'd like the option to have newly created subfolders (automatically) in/excluded</li>
+    <li>If you want to keep your excluded folders preference (of version 1.1 or 1.1.1), you have to do the following after the first display of version 1.1.2's page:
+    <ol>
+	<li>Type<i> about:config </i>in the location bar.</li>
+	<li>Select<i> bookmarkshome.excludedFolders</i>, right click, and choose <i> Copy Value</i>.</li>
+	<li>Select<i> bookmarkshome.inOrExcludedFolders</i>, right click, and choose <i> Modify</i>.</li>
+	<li>Right click in the appearing popup's text field, choose<i> Paste</i>, and click<i> OK</i>.</li>
+	<li>To clean up, you can right click on<i> bookmarkshome.excludedFolders </i>and choose<i> Reset</i>.</li>
+    </ol>
+    <li>If you want to remove the<i> BMHome </i>button from your personal toolbar, you can do step 4 ([..]<i> overlayinfo </i>folder) of <a href="./installation.html#uninstallation">Uninstallation</a>. This counts for Firefox too! I'll think of something better for the next version.
+</ul>
+<br><br>
+<b>Version 1.1.1</b>
+<ul>
+    <li>There was still a problem with the focus. Hopefully, it is now really fixed. There's no need to deinstall version 1.1, before installing 1.1.1.
+</ul>
+<br><br>
+<b>Version 1.1</b>
+<ul>
+    <li>Console error fixed.</li>
+    <li>Firefox seperator error fixed.</li>
+    <li>The Google image has been replaced by a drop down menu with several search engines. The Options Window allows you to choose your default engine, or to hide the search bar altogether.</li> 
+    <li>The input field for the search engine (if not hidden), gets the focus.</li>
+    <li>An option to exclude folders from being displayed has been added.</li>
+    <li>The options link has been moved to the bottom of the page (since you won't use it that often).</li>
+</ul>
+<br><br>
+<b>Version 1.0</b>
+<ul>
+    <li>The<i> Tools-&gt;( Web Development-&gt;)JavaScript Console </i>shows the error:<br>
+    <tt>
+	Error: event is not defined<br>
+	Source File: chrome://bookmarkshome/content/bookmarksHomeOverlay.xul<br>
+	Line: 42<br>
+    </tt></li>
+    <li>In Firefox, inserting a<i> Seperator </i> in your bookmarks, will break <b>BookmarksHome</b>.</li>
+    <li>The input field for Google does not get the focus</li> 
+</ul>

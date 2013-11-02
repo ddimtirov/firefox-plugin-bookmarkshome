@@ -1,0 +1,34 @@
+/* Braun1 Bookmarks - for easy editing colors were separated - Jean */
+/* background */
+body {background-color: #CCA57E;}
+
+/* column */
+.table-main {background-color: #B6703D;}
+
+/* header */
+.table-folder th {background-color: #893C1E;}
+
+/* inside */
+ .table-folder, input, select, option{background-color: #D7B796;}
+
+/* header link*/
+th > a {color: #FFE4C4;}
+
+/* link */
+td > a:link, td > a:visited, td > a:active{color: #893C1E;}
+td > a:hover {color: Black;}
+
+/* border */
+.table-folder, input, select {border: 1px solid #893C1E;}
+
+/* submit */
+input[type="submit"] {background-color: #B6703D; color: #FFE4C4;}
+input:focus {background-color: #CDA981;}
+
+/* static stuff */
+body {font-family: 'trebuchet ms', arial, helvetica, sans-serif;}
+.table-folder {border-spacing: 0px;}
+th {line-height: .9em;}
+a{font-size: .8em; text-decoration: none; white-space: nowrap;
+padding: 0px 0px 0px 2px;}
+.table-folder th {text-align: left; padding: 0px 0px 5px 5px;}

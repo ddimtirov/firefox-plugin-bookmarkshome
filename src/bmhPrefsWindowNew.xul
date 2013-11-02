@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<window id="bookmarksHomePrefsWindow"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    onload="" 
+    title="BookmarksHome Options"> 
+    <!--
+    <script type="application/x-javascript" src="chrome://bookmarkshome/content/bookmarksHomePrefsWindow.js"/>
+    <script type="application/x-javascript" src="chrome://bookmarkshome/content/bookmarksHomePrefs.js"/>
+    -->
+    <script type="application/x-javascript">
+	function showHideEngine( display ) {
+	var engineList = document.getElementById( "engine" );
+	engineList.hidden = ! display;
+	}
+    </script>
+
+    <tabbox>
+	<tabs>
+	    <tab label="General"/>
+	    <tab label="Style"/>
+	    <tab label="Folders"/>
+	</tabs>
+	<tabpanels id="prefsPanels">
+	    <tabpanel id="generalTab" orient="vertical">
+		<groupbox flex="1">
+		    <grid flex="1">
+			<columns></columns>
+			<rows>
+			    <spacer flex="1"/>
+			    <row>
+				<checkbox label="Default search engine:" oncommand="showHideEngine( this.checked )"/>
+				<menulist id="engine" hidden="true">
+				    <menupopup id="enginePopup">
+					<menuitem label="google"/>
+					<menuitem label="msn"/>
+				    </menupopup>
+				</menulist>
+			    </row>
+			    <spacer flex="1"/>
+			    <row>
+				<label value="Main table cellpadding:"/>
+				<hbox>
+				    <textbox id="table_main_cellpadding" size="3"/>
+				    <spacer flex="1"/>
+				</hbox>
+			    </row>
+			    <spacer flex="1"/>
+			    <row>
+				<label value="Column table cellspacing:"/>
+				<hbox>
+				    <textbox id="table_column_cellspacing" size="3"/>
+				    <spacer flex="1"/>
+				</hbox>
+			    </row>
+			    <spacer flex="1"/>
+			    <row>
+				<label value="Number of columns:"/>
+				<hbox>
+				    <textbox id="nrOfColumns" size="3"/>
+				    <spacer flex="1"/>
+				</hbox>
+			    </row>
+			    <spacer flex="1"/>
+			    <row>
+				<label value="Maximum name length:"/>
+				<hbox>
+				    <textbox id="maxNameLength" size="3"/>
+				    <spacer flex="1"/>
+				</hbox>
+			    </row>
+			    <spacer flex="1"/>
+			    <row>
+				<label value="Open folder in:"/>
+				<radiogroup id="openFolderIn" orient="horizontal">
+				    <radio label="tabs"/>
+				    <radio label="windows"/>
+				</radiogroup>
+			    </row>
+			    <spacer flex="1"/>
+			</rows>
+		    </grid>
+		</groupbox>
+	    </tabpanel>
+	    <tabpanel id="styleTab" flex="1" orient="vertical">
+		<groupbox>
+		    <hbox>
+			<spacer flex="1"/>
+			<button label="add"/>
+			<spacer flex="1"/>
+			<button label="delete"/>
+			<spacer flex="1"/>
+			<menulist id="styleList">
+			    <menupopup>
+				<menuitem label="Josh"/>
+				<menuitem label="Dimiter"/>
+				<menuitem label="Some other dude"/>
+			    </menupopup>
+			</menulist>
+			<spacer flex="1"/>
+		    </hbox>
+		</groupbox>
+		<textbox id="stylesheet" multiline="true" rows="15" cols="50" flex="1"/>
+	    </tabpanel>
+	    <tabpanel id="foldersTab" orient="vertical">
+		<groupbox>
+		    <hbox>
+			<spacer flex="1"/>
+			<menulist id="excludeIndex">
+			    <menupopup>
+				<menuitem label="Exclude"/>
+				<menuitem label="Include"/>
+			    </menupopup>
+			</menulist>
+			<spacer flex="1"/>
+			<checkbox id="subfolderCheckbox" label="(un)check subfolders" checked="false"/>
+			<spacer flex="1"/>
+		    </hbox>
+		</groupbox>
+		<vbox
+		    id="inOrExcludedFolders" 
+		    maxheight="225"
+		    oncommand=""/>
+	    </tabpanel>
+	</tabpanels>
+    </tabbox>
+    <spacer style="height" flex="1"/>
+    <hbox align="baseline">
+	<spacer flex="1"/>
+	<!--
+	<button label="Defaults" oncommand="bMHPrefsWindow.reset()"/>
+	-->
+	<button label="Close" oncommand=""/>
+	<button label="Apply" oncommand=""/>
+    </hbox>
+</window>

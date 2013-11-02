@@ -1,0 +1,60 @@
+/*
+* Stylesheet by Josh Powell - KI4BBO.org
+* 1337 Hacker 1.2
+*/
+body{
+    background-color:#000000;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+input,textarea,select,option {
+    background-color:#000000;
+    border-top:1px solid #111111;
+    border-bottom:1px solid #111111;
+    border-left:1px solid #111111;
+    border-right:1px solid #111111;
+    font-family:Verdana,Arial,Helvetica,
+    sans-serif;
+    font-size:80%;
+color:#ffffff;
+}
+
+.table-main {
+    background-color:#333333;
+}
+
+.table-folder {
+    border-top:1px solid #2d2d2d;
+    border-right:1px solid #2d2d2d;
+    border-bottom:1px solid #2d2d2d;
+    border-left:1px solid #2d2d2d;
+    background-color: #171717;
+}
+
+.table-folder th {
+    border-top:1px solid #2d2d2d;
+    border-right:1px solid #2d2d2d;
+    border-bottom:1px solid #2d2d2d;
+    border-left:1px solid #2d2d2d;
+    background-color:#2d2d2d;
+}
+
+a {
+color:#00cc33;
+      text-decoration:none;
+      font-size:0.8em;
+      white-space:nowrap;
+}
+
+.table-folder th a {
+color:#00ff00;
+}
+
+a:hover {
+      text-decoration:none;
+color:#00ff33;}
+
+.table-folder th a:hover {
+color:#00ff00;
+}
+

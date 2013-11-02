@@ -1,0 +1,55 @@
+<script type="text/javascript">
+function changeStyle( sheet ) {
+    links = styleFrame.document.getElementsByTagName( "link" );
+    styleFrame.document.styleSheets[0].disabled = true;
+    links[0].href = sheet;
+    styleSrcFrame.location.href = sheet;
+}
+</script>
+<p>
+The most important features in the <b>BookmarksHome</b> stylesheet are the colors and the font size. The<i> #xxxxxx </i>values (e.g. #ffffff in the stylesheet below) are values for colors. The best way to find the colors you like is to use some kind of <a href="http://www.emory.edu/CRL/abb/colorchooser/colorchooser.html">color chooser</a>. You can change the font size by changing the<i> em </i>values (e.g. from .8em to .7em or 1.2em) or<i> px </i>values of the font(-size) property. If you want to know more you can read this <a href="http://www.w3schools.com/css/css_intro.asp">stylesheet tutorial</a>.
+</p><p>
+To use one of the stylesheets on this page, just copy it from the textarea, paste it into the empty styletab of your options window, and click on<i> apply</i>. 
+</p><p>
+Don't let yourself be discouraged from sending in your stylesheet if you don´t know how to make one as advanced as those below; finding good colors is an art in itself, so someone else´s stylesheet with only the colors changed is welcome too!
+</p><p>
+<table cellpadding="10">
+<caption>Some examples of styles...</caption>
+<tr>
+<td><iframe name="styleFrame" src="bmhStyleNeutral.html" height="275" width="400"></iframe></td>
+<td><iframe name="styleSrcFrame" src="Bubble02Sep04.css" height="275" width="300"></iframe></td>
+</tr>
+</table>
+<table cellpadding="10">
+<!--
+- As you see, the naming scheme for the files and radiobuttons is <(First)Name><ddmmmyy>
+- Order the buttons according to submission date. If 2 or more stylesheets have been posted on the same day, append
+A, B, etc. behind the name (eg Jean10Oct04A, Jean10Oct04B etc). 
+- Make a nice layout of of the radiobuttons. If you know a better way than using tables then that's fine of course
+- We should think of a uniform layout for the stylesheets (see designNotes.txt). For now it's not so important, because the html and therefore the stylesheets are going to change, but at least properties should be indented to make the stylesheet more readable.
+-->
+<tr valign="top">
+<td>
+<input name="styleSelector" type="radio" onclick="changeStyle('Bubble02Sep04.css')" checked>Bubble02Sep04</input><br>
+<input name="styleSelector" type="radio" onclick="changeStyle('Jeroen29Sep04.css')">Jeroen29Sep04</input><br>
+<input name="styleSelector" type="radio" onclick="changeStyle('Dimiter01Oct04.css')">Dimiter01Oct04</input><br>
+<input name="styleSelector" type="radio" onclick="changeStyle('Dimiter02Oct04.css')">Dimiter02Oct04</input><br>
+<input name="styleSelector" type="radio" onclick="changeStyle('Josh05Oct04.css')">Josh05Oct04</input></td><br>
+</td><td>
+<input name="styleSelector" type="radio" onclick="changeStyle('Lithian06Oct04.css')">Lithian06Oct04</input><br>
+<input name="styleSelector" type="radio" onclick="changeStyle('JK08Oct04.css')">JK08Oct04</input><br>
+<input name="styleSelector" type="radio" onclick="changeStyle('Jean10Oct04A.css')">Jean10Oct04A</input><br>
+<input name="styleSelector" type="radio" onclick="changeStyle('Jean10Oct04B.css')">Jean10Oct04B</input><br>
+<input name="styleSelector" type="radio" onclick="changeStyle('Jean10Oct04C.css')">Jean10Oct04C</input><br>
+</td><td>
+<input name="styleSelector" type="radio" onclick="changeStyle('Jean10Oct04D.css')">Jean10Oct04D</input><br>
+<input name="styleSelector" type="radio" onclick="changeStyle('Jean10Oct04E.css')">Jean10Oct04E</input><br>
+<input name="styleSelector" type="radio" onclick="changeStyle('Jean10Oct04F.css')">Jean10Oct04F</input><br>
+<input name="styleSelector" type="radio" onclick="changeStyle('Jean10Oct04G.css')">Jean10Oct04G</input><br>
+<input name="styleSelector" type="radio" onclick="changeStyle('Jean10Oct04H.css')">Jean10Oct04H</input><br>
+</td><td>
+<input name="styleSelector" type="radio" onclick="changeStyle('Jean10Oct04I.css')">Jean10Oct04I</input><br>
+<input name="styleSelector" type="radio" onclick="changeStyle('Jean10Oct04J.css')">Jean10Oct04J</input><br>
+</td></tr>
+</table>
+

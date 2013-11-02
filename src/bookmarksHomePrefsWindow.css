@@ -1,0 +1,18 @@
+@import url(chrome://global/skin/);
+
+#folderFrame {
+}
+
+#inOrExcludedFolders {
+overflow: auto; 
+    background-color: #ffffff;
+}
+
+#hexColor {
+    background-color: #ffffff;
+padding: 3px;
+}
+
+
+
+

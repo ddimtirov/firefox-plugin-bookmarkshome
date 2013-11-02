@@ -1,0 +1,18 @@
+<?php
+ //Really simple mail script by Josh Powell :)
+print "<p>Thank you $_POST[name], for submiting your stylesheet! I will review it, and add it to the Styles page soon.</p>";
+
+//start building the mail string
+$msg = "Name: $_POST[name]\n";
+$msg .= "E-Mail: $_POST[email]\n";
+$msg .= "Stylesheet:\n$_POST[message]\n";
+
+//set up the mail
+$recipient = "bookmarkshome@mozdev.org";
+$subject = "New Bookmarks home style";
+$mailheaders = "From: noreply@mozdev.org\n";
+$mailheaders .= "Reply-To: $_POST[email]\n\n";
+
+//send the mail
+mail($recipient, $subject, $msg, $mailheaders);
+?> 

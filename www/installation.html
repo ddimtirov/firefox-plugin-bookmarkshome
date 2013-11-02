@@ -1,0 +1,72 @@
+<!-- MAIN CONTENT -->
+<h5 class="page-header"><a id="content" name="content">Updating</a></h5>
+<ul>
+    <li><b>v 1.2.2- NB</b> If you want to have <b>BookmarksHome</b> as your home page, set the corresponding preference to:
+    <ol>
+	<li><i>chrome://bookmarkshome/content/startup.html </i></li>
+    </ol>
+    <li><b>v 1.1.2-</b> The installation will remove the<i> BMHome </i>button.</li>
+    <li><b>v 1.1.2-</b> The folder headers will become links and will therefore look different. Adapt your stylesheet to restore your old look. The <a href="styles.html">posted stylesheets</a> have been adapted by me.</li>
+    <li><b>v 1.0 NB</b> If you have version 1.0 installed, it is best to first remove it from your system by following the steps in <a href="#uninstallation">Uninstallation</a> (there's no need to reset your preferences (step 5)). Apologies for the inconvenience.</li>
+</ul>
+<h5 class="page-header"><a id="content" name="content">Installation</a></h5>
+<ul>
+    <li><b>BookmarksHome</b> will be installed in your <a href="http://www.mozilla.org/start/1.0/faq/profile.html#location">personal profile's</a> folder.</li> 
+    <li>After installation, close all running browsers and restart one.</li>
+    <li>In the browser's url field, type or paste the url:</li>
+    <ol>
+	<li><i>chrome://bookmarkshome/content/bookmarksHome.html</i>
+</ol>
+    <li>and press<i> Enter</i>.</li>
+
+    <li>You can create a button by filing (i.e. bookmarking) the page in the<i> Personal Toolbar Folder </i>(Mozilla) or<i> Bookmarks Toolbar Folder </i>(Firefox).</li> 
+    <li>If you want to have <b>BookmarksHome</b> as your home page, set the corresponding preference to:
+    <ol>
+	<li><i>chrome://bookmarkshome/content/startup.html </i></li>
+    </ol>
+</ul>
+<p>
+<a href="http://downloads.mozdev.org/bookmarkshome/bookmarkshome1.2.3.xpi">Install BookmarksHome 1.2.3</a>
+</p>
+<p>
+<small>(Right click the above link and choose<i> Save Link Target As </i>if you want to download <b>BookmarksHome</b>).</small>
+</p>
+<h5 id="uninstallation">Uninstallation</h5>
+<b>BookmarksHome</b> does no harm, but you can deinstall it by executing the following steps:
+<p><u>Mozilla/Netscape</u></p>
+<ol>
+    <li>Go to your <a href="http://www.mozilla.org/start/1.0/faq/profile.html#location">personal profile's</a><i> chrome </i> folder.</li> 
+    <li>Delete<i> bookmarksHome.jar. </i></li>
+    <li>Carefully remove every line with a reference to <b>BookmarksHome</b> from<i> chrome.rdf, </i>i.e. the lines similar to: 
+<pre>
+      &lt;RDF:Description about="urn:mozilla:package:bookmarkshome"
+		   c:baseURL="jar:file:///[...]/chrome/bookmarksHome.jar!/content/bookmarkshome/"
+		   c:locType="profile"
+		   c:displayName="BookmarksHome 1.0"
+		   c:author="Jeroen Groenenboom"
+		   c:name="bookmarkshome"
+		   c:extension="true"
+		   c:description="turns bookmarks into pretty homepage" /&gt;
+  </pre>and the line:
+<pre>
+	&lt;RDF:li resource="urn:mozilla:package:bookmarksHome"/&gt;
+</pre></li>
+  <li>Carefully remove every line with a reference to <b>BookmarksHome</b> (if present) from the<i> overlayinfo </i>folder, i.e.<br>
+  in<i> overlayinfo/browser/content/overlays.rdf: </i>
+  <pre>
+      &lt;RDF:li&gt;chrome://bookmarkshome/content/bookmarksHomeOverlay.xul&lt;/RDF:li&gt;
+      </pre>
+  and in <i> overlayinfo/navigator/content/overlays.rdf: </i>
+  <pre>
+      &lt;RDF:li&gt;chrome://bookmarkshome/content/bookmarksHomeOverlay.xul&lt;/RDF:li&gt;
+      </pre></li>
+  <li>Type<i> about:config </i>in the location bar and reset all preferences (Right click-&gt;Reset) that start with<i> bookmarkshome. </i></li>
+  <li>Restart Mozilla.</li>
+</ol>
+<p><u>FireFox</u></p>
+<ol>
+    <li>Choose Uninstall <b>BookmarksHome</b> in the Tools-&gt;Extensions Window.</li>
+    <li>Type<i> about:config </i> in the location bar and reset all preferences (Right click-&gt;Reset) that start with<i> bookmarkshome. </i>
+    </li>
+</ol>
+

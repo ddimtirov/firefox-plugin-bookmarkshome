@@ -1,0 +1,34 @@
+/* Schlamm1 Bookmarks - for easy editing colors were separated - Jean */
+/* background */
+body {background-color: #D1CEC2;}
+
+/* column */
+.table-main {background-color: #A7A18B;}
+
+/* header */
+.table-folder th {background-color: #98564A;}
+
+/* inside */
+ .table-folder, input, select, option{background-color: #DCDAD1;}
+
+/* header link*/
+th > a {color: #FFE4C4;}
+
+/* link */
+td > a:link, td > a:visited, td > a:active{color: #893C1E;}
+td > a:hover {color: Black;}
+
+/* border */
+.table-folder, input, select {border: 1px solid #98564A;}
+
+/* submit */
+input[type="submit"] {background-color: #A7A18B; color: #DCDAD1;}
+input:focus {background-color: #EAE8E1;}
+
+/* static stuff */
+body {font-family: 'trebuchet ms', arial, helvetica, sans-serif;}
+.table-folder {border-spacing: 0px;}
+th {line-height: .9em;}
+a{font-size: .8em; text-decoration: none; white-space: nowrap;
+padding: 0px 0px 0px 2px;}
+.table-folder th {text-align: left; padding: 0px 0px 5px 5px;}

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://bookmarkshome/content/bookmarksHomePrefsWindow.css" type="text/css"?>
+
+<page id="folderPage"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <vbox id="inOrExcludedFolders" 
+	oncommand="parent.bMHPrefsWindow.checkSubfolders( event.target )"
+	flex="1">
+    </vbox>
+</page>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <!--
+    // xhtml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	// html 4.01 
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+	<html>
+	    -->
+	    <head>
+		<!--
+		// xhtml with application/xhtml+xml content
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+
+		// xhtml with text/html content and html 4.01
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		-->
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+		<title>BookmarksHome</title>
+		<style type="text/css"></style>
+		<!--
+		// empty script tag with terminating slash in xhtml document not recognized by mozilla
+		-->
+		<!--
+		// xhtml with applictation/xhtml+xml content
+		<script  type="application/x-javascript" src="chrome://bookmarkshome/content/bookmarksHome.js"></script>
+		<script type="application/x-javascript" src="chrome://bookmarkshome/content/bookmarksHomePrefs.js"></script>
+		<script type="application/x-javascript">
+
+		    // xhtml with text/html content and html 4.01
+		    <script  type="text/javascript" src="chrome://bookmarkshome/content/bookmarksHome.js"></script>
+		    <script  type="text/javascript" src="chrome://bookmarkshome/content/bookmarksHomePrefs.js"></script>
+		    <script type="text/javascript">
+			-->
+			<script  type="application/x-javascript" src="chrome://bookmarkshome/content/bookmarksHome.js"></script>
+			<script type="application/x-javascript" src="chrome://bookmarkshome/content/bookmarksHomePrefs.js"></script>
+			<script type="application/x-javascript">
+			    <!--//<![CDATA[
+
+			    function bmhInternetSearch() {
+				var engineSelect = document.getElementById( "engineSelect" );
+				var engine = engineSelect.options[engineSelect.selectedIndex].value;
+				var query = encodeURI( document.getElementById( "queryInput" ).value );
+				window.location.href = ( "http://" + engine + query );
+			    }
+
+			    function bmhCheck( func ) {
+				// checks if document has chrome url. If not,
+				// alerts that functions are not available
+				// this function is useful for the uploaded file
+				var regExp = new RegExp( "^" + "chrome" );
+				if( ! regExp.test( document.location.href )) {
+				    alert( "This feature is not available" );
+				    return;
+				}
+				switch( func ) {
+				    case "openFolder":
+				    bMHPrefs.openFolder( bmhCheck.arguments[1] );
+				    break;
+				    case "openOptions":
+				    var prefsWindow = window.open( "bookmarksHomePrefsWindow.xul", "prefs",
+				    "height=350,width=400,top=50,left=50,resizable=yes");
+				    prefsWindow.focus();
+				    break;
+				    case "upload":
+				    //bMHPrefs.upload();
+				    break;
+				}
+			    }
+
+			    //]]>-->
+			</script>
+		    </head>
+		    <body onload="bookmarksHome.main()">
+		    <!--
+			<table>
+			    <tr></tr>
+			</table>
+			-->
+			<div class="otherLinks">
+			    <ul>
+				<li><a href="http://bookmarkshome.mozdev.org">home</a></li>
+				<li><a href="javascript:void(bmhCheck('openOptions'))">options</a></li>
+				<li><a href="javascript:void(bmhCheck('upload'))">upload</a></li>
+			    </ul>
+			</div>
+		    </body>
+		</html>
+

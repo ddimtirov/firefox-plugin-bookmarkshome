@@ -1,0 +1,44 @@
+body { 
+    background-color: #ffffff;
+    font-family: 'trebuchet ms', arial, helvetica, sans-serif; 
+}
+
+.table-main { 
+    background-color: #e4ecec; 
+}
+
+.table-folder { 
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #aac3c3;
+    border-bottom: 1px solid #aac3c3;
+    border-left: 1px solid #ffffff;
+    background-color: #c0dcdc; 
+}
+
+.table-folder th { 
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #aed48f;
+    border-bottom: 1px solid #aed48f;
+    border-left: 1px solid #ffffff;
+    background-color: #c4efa1; 
+}
+
+a { color: #6b5c78; 
+    text-decoration: none;
+    font-size: .8em; 
+    white-space: nowrap;
+}
+
+
+.table-folder th a {
+color: #1d9101; 
+}
+
+a:hover { 
+      text-decoration: none;
+color: #000000; 
+  }
+
+.table-folder th a:hover {
+color: #000000; 
+}

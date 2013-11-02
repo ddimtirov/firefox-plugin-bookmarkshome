@@ -1,0 +1,66 @@
+body { 
+    background-color: silver; 
+}
+
+.table-main {
+    background-color: white;
+    -moz-border-radius: 30px;
+}
+
+.table-column { 
+    -moz-border-radius: 18px 0px; 
+border: 1px solid white; 
+}
+
+.table-column:hover { 
+    border-color: gray; 
+}
+
+.table-folder, .table-folder * { 
+border: 0px; 
+padding: 0px; 
+margin: 0px; 
+}
+
+.table-folder th { 
+    background-color: gray; 
+    -moz-border-radius: 15px 0px; 
+}
+
+.table-folder:hover th { 
+    background-color: navy; 
+}
+
+.table-folder td { 
+padding: 0px 10px 3px 10px; 
+}
+
+.table-folder td:hover { 
+    -moz-border-radius: 10px; 
+}
+
+a {
+font: 9px verdana, helvetica, sans-serif;
+      text-decoration: none;
+      white-space: nowrap;
+padding: 0px;
+margin: 0px;
+}
+
+.table-folder th a { 
+    font-weight: bold; 
+color: white; }
+
+.table-folder th a:hover { 
+    font-weight: bold; 
+color: cyan; 
+}
+
+.table-folder td:hover { 
+    background-color: navy; 
+}
+
+.table-folder td:hover a { 
+color: white; 
+}
+

@@ -1,0 +1,33 @@
+/* Gelb1 Bookmarks - for easy editing colors were separated - Jean */
+/* background */
+body {background-color: #E0D191;}
+
+/* column */
+.table-main, input:focus {background-color: #DEA201;}
+
+/* header */
+.table-folder th {background-color: #802800;}
+
+/* inside */
+ .table-folder, input, select, option{background-color: #DBCE97;}
+
+/* header link*/
+th > a {color: #FFE4C4;}
+
+/* link */
+td > a:link, td > a:visited, td > a:active{color: #802800;}
+td > a:hover {color: Black;}
+
+/* border */
+.table-folder, input, select {border: 1px solid #802800;}
+
+/* submit */
+input[type="submit"] {background-color: #DEA201; color: #802800;}
+
+/* static stuff */
+body {font-family: 'trebuchet ms', arial, helvetica, sans-serif;}
+.table-folder {border-spacing: 0px;}
+th {line-height: .9em;}
+a{font-size: .8em; text-decoration: none; white-space: nowrap;
+padding: 0px 0px 0px 2px;}
+.table-folder th {text-align: left; padding: 0px 0px 5px 5px;}

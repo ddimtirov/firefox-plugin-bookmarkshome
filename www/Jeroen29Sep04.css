@@ -1,0 +1,47 @@
+body {
+    font-family: 'trebuchet ms', arial, helvetica, sans-serif;
+    background-color: #ffeeff;
+}
+
+.table-main {
+    background-color: #996699;
+    -moz-border-radius: 10px;
+}
+
+/* .table-column {} */
+
+.table-folder {
+    background-color: #ffccff;
+    -moz-border-radius: 5px;
+}
+
+.table-folder th {
+color: #ffffff;
+       background-color: #cc6666;
+       -moz-border-radius: 5px;
+}
+
+.table-folder th:hover {
+    background-color: #ffeeff;
+}
+
+.table-folder td:hover {
+    background-color: #ffeeff;
+}
+
+a {
+    font-size: .8em;
+color: #000000;
+       text-decoration: none;
+       white-space: nowrap;
+}
+
+th a {
+color: #ffffff;
+}
+
+a:hover {
+color: #dd6666;
+  }
+
+

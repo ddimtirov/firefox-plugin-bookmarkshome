@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:styles="http://bookmarkshome.mozdev.org/rdf/styles/">
+
+    <rdf:Seq rdf:about="http://bookmarkshome.mozdev.org/rdf/styles/stylesList">
+	<rdf:li rdf:resource="http://bookmarkshome.mozdev.org/rdf/styles/Default"/>
+	<rdf:li rdf:resource="http://bookmarkshome.mozdev.org/rdf/styles/Bubble02Sep04"/>
+	<rdf:li rdf:resource="http://bookmarkshome.mozdev.org/rdf/styles/Jeroen29Sep04"/>
+	<rdf:li rdf:resource="http://bookmarkshome.mozdev.org/rdf/styles/Dimiter01Oct04"/>
+	<rdf:li rdf:resource="http://bookmarkshome.mozdev.org/rdf/styles/Dimiter02Oct04"/>
+	<rdf:li rdf:resource="http://bookmarkshome.mozdev.org/rdf/styles/Josh05Oct04"/>
+    </rdf:Seq>
+
+    <rdf:Description rdf:about="http://bookmarkshome.mozdev.org/rdf/styles/Default">
+	<styles:name>Default</styles:name>
+	<styles:sheet>
+	    <![CDATA[
+	    body {
+	    background-color: #FFFFFF;
+	    font-family: 'trebuchet ms', arial, helvetica, sans-serif;
+	    }
+	    .table-main { 
+	    background-color: #E4ECEC; 
+	    }
+	    .table-folder { 
+	    border-top: 1px solid #FFFFFF;
+	    border-right: 1px solid #AAC3C3;
+	    border-bottom: 1px solid #AAC3C3;
+	    border-left: 1px solid #FFFFFF;
+	    background-color: #C0DCDC; 
+	    }
+	    .table-folder th { 
+	    border-top: 1px solid #FFFFFF;
+	    border-right: 1px solid #AED48F;
+	    border-bottom: 1px solid #AED48F;
+	    border-left: 1px solid #FFFFFF;
+	    background-color: #C4EFA1; 
+	    }
+	    a { color: #6B5C78; 
+	    text-decoration: none;
+	    font-size: .8em; 
+	    white-space: nowrap;
+	    }
+	    .table-folder th a {
+	    color: #1D9101; 
+	    }
+	    a:hover { 
+	    text-decoration: none;
+	    color: #000000; 
+	    }
+	    .table-folder th a:hover {
+	    color: #000000; 
+	    }
+	    ]]>
+	</styles:sheet>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://bookmarkshome.mozdev.org/rdf/styles/Bubble02Sep04">
+	<styles:name>Bubble02Sep04</styles:name>
+	<styles:sheet>
+	    <![CDATA[
+	    body { 
+	    background-color: #FFFFFF;
+	    font-family: 'trebuchet ms', arial, helvetica, sans-serif; 
+	    }
+	    .table-main { 
+	    background-color: #E4ECEC; 
+	    }
+	    .table-folder { 
+	    border-top: 1px solid #FFFFFF;
+	    border-right: 1px solid #AAC3C3;
+	    border-bottom: 1px solid #AAC3C3;
+	    border-left: 1px solid #FFFFFF;
+	    background-color: #C0DCDC; 
+	    }
+	    .table-folder th { 
+	    border-top: 1px solid #FFFFFF;
+	    border-right: 1px solid #AED48F;
+	    border-bottom: 1px solid #AED48F;
+	    border-left: 1px solid #FFFFFF;
+	    background-color: #C4EFA1; 
+	    }
+	    a { color: #6B5C78; 
+	    text-decoration: none;
+	    font-size: .8em; 
+	    white-space: nowrap;
+	    }
+	    .table-folder th a {
+	    color: #1D9101; 
+	    }
+	    a:hover { 
+	    text-decoration: none;
+	    color: #000000; 
+	    }
+	    .table-folder th a:hover {
+	    color: #000000; 
+	    }
+	    ]]>
+	</styles:sheet>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://bookmarkshome.mozdev.org/rdf/styles/Jeroen29Sep04">
+	<styles:name>Jeroen29Sep04</styles:name>
+	<styles:sheet>
+	    <![CDATA[
+	    body {
+	    font-family: 'trebuchet ms', arial, helvetica, sans-serif;
+	    background-color: #FFEEFF;
+	    }
+	    .table-main {
+	    background-color: #996699;
+	    -moz-border-radius: 10px;
+	    }
+	    /* .table-column {} */
+	    .table-folder {
+	    background-color: #FFCCFF;
+	    -moz-border-radius: 5px;
+	    }
+	    .table-folder th {
+	    color: #FFFFFF;
+	    background-color: #CC6666;
+	    -moz-border-radius: 5px;
+	    }
+	    .table-folder th:hover {
+	    background-color: #FFEEFF;
+	    }
+	    .table-folder td:hover {
+	    background-color: #FFEEFF;
+	    }
+	    a {
+	    font-size: .8em;
+	    color: #000000;
+	    text-decoration: none;
+	    white-space: nowrap;
+	    }
+	    th a {
+	    color: #FFFFFF;
+	    }
+	    a:hover {
+	    color: #DD6666;
+	    }
+	    ]]>
+	</styles:sheet>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://bookmarkshome.mozdev.org/rdf/styles/Dimiter01Oct04">
+	<styles:name>Dimiter01Oct04</styles:name>
+	<styles:sheet>
+	    <![CDATA[
+	    body { 
+	    background-color: silver; 
+	    }
+	    .table-main {
+	    background-color: white;
+	    -moz-border-radius: 30px;
+	    }
+	    .table-column { 
+	    -moz-border-radius: 18px 0px; 
+	    border: 1px solid white; 
+	    }
+	    .table-column:hover { 
+	    border-color: gray; 
+	    }
+	    .table-folder, .table-folder * { 
+	    border: 0px; 
+	    padding: 0px; 
+	    margin: 0px; 
+	    }
+	    .table-folder th { 
+	    background-color: gray; 
+	    -moz-border-radius: 15px 0px; 
+	    }
+	    .table-folder:hover th { 
+	    background-color: navy; 
+	    }
+	    .table-folder td { 
+	    padding: 0px 10px 3px 10px; 
+	    }
+	    .table-folder td:hover { 
+	    -moz-border-radius: 10px; 
+	    }
+	    a {
+	    font: 9px verdana, helvetica, sans-serif;
+	    text-decoration: none;
+	    white-space: nowrap;
+	    padding: 0px;
+	    margin: 0px;
+	    }
+	    .table-folder th a { 
+	    font-weight: bold; 
+	    color: white; }
+	    .table-folder th a:hover { 
+	    font-weight: bold; 
+	    color: cyan; 
+	    }
+	    .table-folder td:hover { 
+	    background-color: navy; 
+	    }
+	    .table-folder td:hover a { 
+	    color: white; 
+	    }
+	    ]]>
+	</styles:sheet>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://bookmarkshome.mozdev.org/rdf/styles/Dimiter02Oct04">
+	<styles:name>Dimiter02Oct04</styles:name>
+	<styles:sheet>
+	    <![CDATA[
+	    /* == Text and Background colors ============= */
+	    body                           { background-color: Background;       color: CaptionText;   }
+	    #searchForm                    { background-color: Menu;             color: MenuText;      }
+	    .table-main                    { background-color: Window;           color: WindowText;    }
+	    .table-folder       td a:hover { background-color: Highlight;        color: HighlightText; }
+	    .table-folder:hover th a       { background-color: Highlight;        color: HighlightText; }
+	    .table-folder       th a       { background-color: InactiveBorder;   color: HighlightText; }
+	    /* == Fonts & Text =========================== */
+	    body, body *             { font: xx-small verdana, helvetica, sans-serif; }
+	    a                        { text-decoration: none; }
+	    #searchForm              { text-align: left; }
+	    .table-folder th a       { font-weight: bold; }
+	    .table-folder th a:hover { text-decoration: underline; }
+	    /* == Mozilla rounded borders ================ */ 
+	    #searchForm              { -moz-border-radius:   0em  3em  0em 0em; }
+	    .table-main              { -moz-border-radius:   0em  0em  3em 0em; }
+	    .table-main:first-child  { -moz-border-radius:   3em  0em  3em 0em; }
+	    .table-column            { -moz-border-radius:   1em  1em  0em 0em; }
+	    .table-folder th a       { -moz-border-radius:   1em  1em  0em 0em; }
+	    .table-folder td a       { -moz-border-radius:  .3em; }
+	    /* == Formatting, Box, Tables ================ */
+	    body { margin: 1em; padding: 0em; }
+	    a  { padding: .1em 1em .2em 1em !important; display: block; }
+	    br { display: runin; }  
+	    #searchForm        { width: 100%; display: block; margin-bottom: 0em; }
+	    .table-main        { width: 100%; }
+	    .table-column      { border: InactiveBorder 1px solid; }
+	    .table-folder      { margin-bottom: 1em }
+	    .table-folder th a { margin-bottom: .3em; }
+	    body > div > a { 
+	    position: absolute; 
+	    top: 0em; 
+	    right: 0em; 
+	    padding: 1em 3em 0em 0em !important; 
+	    }
+	    .table-folder, .table-folder * {
+	    border: 0em; 
+	    padding: 0em; 
+	    margin: 0em;
+	    border-spacing: 0em; 
+	    border-collapse: collapse;
+	    width: *;
+	    }
+	    ]]>
+	</styles:sheet>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://bookmarkshome.mozdev.org/rdf/styles/Josh05Oct04">
+	<styles:name>Josh05Oct04</styles:name>
+	<styles:sheet>
+	    <![CDATA[
+	    /*
+	    * Stylesheet by Josh Powell - KI4BBO.org
+	    * 1337 Hacker 1.2
+	    */
+	    body{
+	    background-color:#000000;
+	    font-family:Arial,Helvetica,sans-serif;
+	    }
+	    input,textarea,select,option {
+	    background-color:#000000;
+	    border-top:1px solid #111111;
+	    border-bottom:1px solid #111111;
+	    border-left:1px solid #111111;
+	    border-right:1px solid #111111;
+	    font-family:Verdana,Arial,Helvetica,
+	    sans-serif;
+	    font-size:80%;
+	    color:#FFFFFF;
+	    }
+	    .table-main {
+	    background-color:#333333;
+	    }
+	    .table-folder {
+	    border-top:1px solid #2D2D2D;
+	    border-right:1px solid #2D2D2D;
+	    border-bottom:1px solid #2D2D2D;
+	    border-left:1px solid #2D2D2D;
+	    background-color: #171717;
+	    }
+	    .table-folder th {
+	    border-top:1px solid #2D2D2D;
+	    border-right:1px solid #2D2D2D;
+	    border-bottom:1px solid #2D2D2D;
+	    border-left:1px solid #2D2D2D;
+	    background-color:#2D2D2D;
+	    }
+	    a {
+	    color:#00CC33;
+	    text-decoration:none;
+	    font-size:0.8em;
+	    white-space:nowrap;
+	    }
+	    .table-folder th a {
+	    color:#00FF00;
+	    }
+	    a:hover {
+	    text-decoration:none;
+	    color:#00FF33;}
+	    .table-folder th a:hover {
+	    color:#00FF00;
+	    }
+	    ]]>
+	</styles:sheet>
+    </rdf:Description>
+
+
+</rdf:RDF>
+
